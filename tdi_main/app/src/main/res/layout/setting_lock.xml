@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/vertical_match_LinearLayout"
+    android:background="@color/colorWhite">
+    <android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/primary_toolbar"
+        android:id="@+id/setting_lock_app_toolbar">
+    <ImageView
+        style="@style/toolbar_back_btn"
+        android:id="@+id/setting_lock_back_setting" />
+    <TextView
+        style="@style/toolbar_text"
+        android:id="@+id/setting_lock_toolbar_title"
+        android:text="잠금 설정" />
+</android.support.v7.widget.Toolbar>
+        <LinearLayout
+            style="@style/setting_upper_textline_box"
+            android:layout_weight="5">
+             <LinearLayout
+                style="@style/default_match_wrap_Layout"
+                android:gravity="center">
+                <TextView
+                    style="@style/setting_upper_text"
+                    android:text="잠금 설정" />
+                <Switch
+                    style="@style/setting_upper_switch_btn"
+                    android:id="@+id/lockview_switch" />
+             </LinearLayout>
+        </LinearLayout>
+        <!--스위치 세로-->
+    <!--//하단 내용-->
+    <LinearLayout
+        style="@style/setting_under_textline_box"
+        android:layout_weight="1">
+        <View style="@style/setting_under_line" />
+            <LinearLayout
+                style="@style/vertical_match_wrap_LinearLayout"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+            <LinearLayout style="@style/setting_match_wrap_Layout">
+                <TextView
+                    style="@style/setting_upper_text"
+                    android:text="드래그" />
+
+                <TextView
+                    android:id="@+id/Drag_text"
+                    style="@style/setting_upper_switch_text"
+                    android:text="설정 안함"
+                    android:textColor="@color/colorGrayoff" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_match_wrap_Layout">
+                <TextView
+                    style="@style/setting_upper_text"
+                    android:text="비밀번호" />
+
+                <TextView
+                    android:id="@+id/Password_text"
+                    style="@style/setting_upper_switch_text"
+                    android:text="설정 안함"
+                    android:textColor="@color/colorGrayoff" />
+            </LinearLayout>
+            <LinearLayout style="@style/setting_match_wrap_Layout">
+                <TextView
+                    style="@style/setting_upper_text"
+                    android:text="패턴" />
+
+                <TextView
+                    android:id="@+id/Pattern_text"
+                    style="@style/setting_upper_switch_text"
+                    android:text="설정 안함"
+                    android:textColor="@color/colorGrayoff" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            style="@style/setting_notice_under_line"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

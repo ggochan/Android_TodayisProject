@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/vertical_match_LinearLayout"
+    android:background="@color/colorWhite">
+    <!--상단 툴바-->
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/primary_toolbar"
+    android:id="@+id/setting_appinfo_app_toolbar">
+    <ImageView
+        style="@style/toolbar_back_btn"
+        android:id="@+id/setting_appinfo_back_setting"
+        />
+    <TextView
+        style="@style/toolbar_text"
+        android:id="@+id/setting_appinfo_toolbar_title"
+        android:text="어플리케이션 정보"
+        />
+</android.support.v7.widget.Toolbar>
+    <LinearLayout
+        style="@style/vertical_match_LinearLayout"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+        <!--Info 로고-->
+        <ImageView
+            style="@style/vertical_wrap_LinearLayout"
+            android:layout_marginBottom="@dimen/select_logo_margin"
+            android:src="@drawable/infologo"
+            />
+        <TextView
+            style="@style/select_main_font"
+            android:textSize="@dimen/select_logo_font"
+            android:textColor="@color/colorBlack55"
+            android:text="오늘은?"
+            />
+        <!--//Info 로고-->
+        <!--버전정보-->
+        <LinearLayout
+            style="@style/default_match_wrap_Layout"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+            <TextView
+                style="@style/setting_info_verson_text"
+                android:text="버전정보"/>
+            <TextView
+                style="@style/setting_info_verson_text"
+                android:textColor="@color/colorGrayoff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="1.0.1"/>
+            <TextView
+                style="@style/setting_info_verson_text"
+                android:textColor="@color/colorPrimary"
+                android:text="최신버전"/>
+        </LinearLayout>
+        <!--//버전정보-->
+    </LinearLayout>
+    <!--아래 화면-->
+    <LinearLayout
+        style="@style/setting_under_textline_box"
+        android:layout_weight="1">
+        <!--분할 선-->
+        <View style="@style/setting_under_line" />
+        <!--//분할 선-->
+        <!--아래 내부 레이아웃 (분할 선 밖에 빼려고 하나 더 만든 레이아웃)-->
+        <LinearLayout
+            style="@style/vertical_match_wrap_LinearLayout"
+            android:paddingLeft="15dp">
+            <!--이용약관-->
+            <TextView
+                style="@style/setting_under_text"
+                android:text="이용약관"/>
+            <!--이용약관-->
+            <!--개인정보처리방침-->
+            <TextView
+                style="@style/setting_under_text"
+                android:text="개인정보처리방침"/>
+            <!--//개인정보처리방침-->
+            <!--오픈 소스 라이선스-->
+            <TextView
+                style="@style/setting_under_text"
+                android:text="오픈 소스 라이선스"/>
+            <!--//오픈 소스 라이선스-->
+            <!--위치기반서비스 이용약관-->
+            <TextView
+                style="@style/setting_under_text"
+                android:text="위치기반서비스 이용약관"/>
+        </LinearLayout>
+        <!--//위치기반서비스 이용약관-->
+        <!--//아래 내부 레이아웃-->
+        <!--분할 선-->
+        <View
+            style="@style/setting_under_line"
+            android:layout_marginTop="20dp" />
+        <!--//분할 선-->
+    </LinearLayout>
+    <!--//아래 화면-->
+</LinearLayout>
